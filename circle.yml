@@ -7,9 +7,7 @@ dependencies:
 
 test:
   pre:
-    - cd $CIRCLE_ARTIFACTS/
-    - dotnet new
-  override:
     - dotnet restore
-    - dotnet run
-    - echo "done"
+  override:
+    - dotnet test
+    
