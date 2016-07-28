@@ -10,4 +10,5 @@ test:
     - dotnet restore
   override:
     - dotnet test src/Test
+    - dotnet publish src/Test -o $CIRCLE_ARTIFACTS/
     
