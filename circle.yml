@@ -7,8 +7,7 @@ dependencies:
 
 test:
   pre:
-    - cd src/Test
     - dotnet restore
   override:
-    - dotnet test
+    - dotnet test src/Test
     
