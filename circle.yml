@@ -11,8 +11,7 @@ dependencies:
 
 test:
   pre:
-    - mkdir hwapp
-    - cd hwapp
+    - cd $CIRCLE_ARTIFACTS/
     - dotnet new
   override:
     - dotnet restore
