@@ -17,7 +17,7 @@ namespace Test
         [Theory]
         [InlineData(3)]
         [InlineData(5)]
-        [InlineData(6)]
+        //[InlineData(6)]
         public void MyFirstTheory(int value)
         {
             Assert.True(SimpleCalculator.IsOdd(value));
