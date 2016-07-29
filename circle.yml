@@ -16,5 +16,7 @@ test:
  
 
 deployment:
-  command:
-	- echo "Hello world"
+   production:
+    branch: master
+    command:
+      - echo "hello"
