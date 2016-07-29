@@ -10,7 +10,7 @@ test:
   pre:
     - dotnet restore
   override:
-    - dotnet test src/Test -xml $$CIRCLE_TEST_RESULTS/junit.xml
+    - dotnet test src/Test -xml $CIRCLE_TEST_RESULTS/junit.xml
   post:
     - dotnet publish src/Test -o $CIRCLE_ARTIFACTS/
     
