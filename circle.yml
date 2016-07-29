@@ -13,4 +13,8 @@ test:
     - dotnet test src/Test -xml $CIRCLE_ARTIFACTS/junit.xml
   post:
     - dotnet publish src/Web -o $CIRCLE_ARTIFACTS/
-    
+ 
+
+deployment:
+  command:
+	- echo "Hello world"
