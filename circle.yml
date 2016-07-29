@@ -19,4 +19,4 @@ deployment:
    production:
     branch: master
     command:
-      - echo "hello"
+      - echo 'hello'
