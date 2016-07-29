@@ -12,5 +12,5 @@ test:
   override:
     - dotnet test src/Test -xml $CIRCLE_ARTIFACTS/junit.xml
   post:
-    - dotnet publish src/Test -o $CIRCLE_ARTIFACTS/
+    - dotnet publish src/Web -o $CIRCLE_ARTIFACTS/
     
