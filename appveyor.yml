@@ -6,7 +6,7 @@ init:
   
 install:
 # Use the install script to grab the latest dotnet install
-- ps: iex .\dotnet-latest.ps1
+- ps: iex .\dotnet-cli.ps1
 
 # Prepend newly installed dotnet cli to the PATH of this build (this cannot be
 # done from inside the powershell script as it would require to restart
